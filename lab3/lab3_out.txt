@@ -1,0 +1,4 @@
+This program was executed at time : 1572278683.000000 secs
+The sizes of different data type for this machine and compiler are -
+int data type is 4 bytes or 32 bits long
+double data type is 8 bytes or 64 bits long

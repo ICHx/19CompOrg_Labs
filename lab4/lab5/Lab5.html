@@ -1,0 +1,406 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+    <title></title>
+    <meta content="LibreOffice 6.0.7.3 (Linux)" name="generator"/>
+    <meta content="SUN" name="author"/>
+    <meta content="2012-10-17T23:54:00" name="created"/>
+    <meta content="2019-11-21T17:39:36.087779107" name="changed"/>
+    <meta content="2052-11.3.0.8775" name="KSOProductBuildVer"/>
+    <style type="text/css">
+        @page {
+            margin-left: 2cm;
+            margin-right: 3.18cm;
+            margin-top: 2.54cm;
+            margin-bottom: 2.54cm
+        }
+
+        p {
+            margin-bottom: 0.25cm;
+            direction: ltr;
+            color: #000000;
+            line-height: 150%;
+            text-align: justify;
+            orphans: 0;
+            widows: 0
+        }
+
+        p.western {
+            font-family: "Arial", sans-serif;
+            font-size: 10pt;
+            so-language: en-US
+        }
+
+        p.cjk {
+            font-family: "宋体";
+            font-size: 10pt;
+            so-language: zh-CN
+        }
+
+        p.ctl {
+            font-family: "Times New Roman", serif;
+            font-size: 11pt;
+            so-language: ar-SA
+        }
+
+        h1 {
+            margin-top: 0.6cm;
+            margin-bottom: 0.58cm;
+            direction: ltr;
+            color: #000000;
+            line-height: 200%;
+            text-align: justify;
+            page-break-inside: avoid;
+            orphans: 0;
+            widows: 0
+        }
+
+        h1.western {
+            font-family: "Calibri", sans-serif;
+            font-size: 22pt;
+            so-language: en-US
+        }
+
+        h1.cjk {
+            font-family: "宋体";
+            so-language: zh-CN
+        }
+
+        h1.ctl {
+            font-family: "Times New Roman", serif;
+            so-language: ar-SA
+        }
+
+        h2 {
+            margin-top: 0.46cm;
+            margin-bottom: 0.46cm;
+            direction: ltr;
+            color: #000000;
+            line-height: 173%;
+            text-align: justify;
+            page-break-inside: avoid;
+            orphans: 0;
+            widows: 0
+        }
+
+        h2.western {
+            font-family: "Cambria", serif;
+            font-size: 16pt;
+            so-language: en-US
+        }
+
+        h2.cjk {
+            font-family: "宋体";
+            font-size: 16pt;
+            so-language: zh-CN
+        }
+
+        h2.ctl {
+            font-family: "Times New Roman", serif;
+            font-size: 16pt;
+            so-language: ar-SA
+        }
+
+        a:link {
+            color: #0000ff
+        }
+    </style>
+</head>
+<body dir="ltr" lang="en-US" link="#0000ff" text="#000000">
+<h1 class="western"><font face="Verdana, sans-serif"><font size="5" style="font-size: 18pt">Lab
+    <span lang="en-US">5</span>: A Simple Real-life Control System Lab</font></font></h1>
+<h2 class="western"><font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt">1
+    Introduction</font></font></h2>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">This
+lab extends lab </span></font><font size="2" style="font-size: 11pt"><span lang="en-US"><span
+            style="font-weight: normal">3</span></span></font><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">.
+Please be patient to read full instructions.</span></font></font></font></p>
+<h2 class="western"><font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt">2
+    Type</font></font></h2>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">This
+is a</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">team</span></font>
+        <font size="2" style="font-size: 11pt"><span style="font-weight: normal">project</span></font>
+        <font size="2" style="font-size: 11pt"><span style="font-weight: normal">(up
+to two students).</span></font> </font></font>
+</p>
+<h2 class="western"><font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt">3
+    Instructions</font></font></h2>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">Assume
+you are hired by Ford Motor Company to develop the embedded software
+for their new</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">model
+of cars. This software executes on the main computer that sits inside
+the car. Your</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">manager
+wrote down the “Software Requirement Specification (SRS)”
+document and gave it to</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">you.
+Based on the “requirements” listed in this document you have to
+develop a C program that materializes these
+requirements/specifications. Given below is a portion of the SRS
+document</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">which
+includes the schematic of the car’s electronics and computer
+systems:</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <img align="absmiddle" border="0" height="525" name="图片 1" src="Lab5_html_13320fa0d4be3999.gif" width="856"/>
+
+</p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">The
+sensors convert the physical states (pressure induced by the driver</span></font>
+        <font size="2" style="font-size: 11pt"><span style="font-weight: normal">on
+the seat when he is seating on it, etc.) and mechanical motions
+(driver pressing the brake</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">pedal)
+to electrical signals (voltage, current). The input interface
+sub-system (commonly</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">denoted
+as “i/p i/f”, “i/p” for input, “i/f” for interface)
+converts electrical signal into digital form</span></font> <font size="2" style="font-size: 11pt"><span
+                style="font-weight: normal">(number,
+bits etc.). The decision/control sub-system is</span></font> <font size="2" style="font-size: 11pt"><span
+                style="font-weight: normal">the
+main functional block which provides the intelligence to the car so
+that it can take the right</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">action
+based on the given situation. The decision logic provides digital
+output (numbers, bits),</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">which
+is converted back to electrical signals by the Output interface (o/p
+i/f). These electrical</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">signals
+are used to activate the electro-mechanical actuators (motors,
+electro-magnets etc.). For</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">this
+particular lab class, your job is to </span></font><font size="2" style="font-size: 11pt"><i><span
+                style="font-weight: normal">design
+the decision control logic</span></i></font><font size="2" style="font-size: 11pt"><span style="font-weight: normal">.
+You will design the i/p i/f and o/p i/f sub-systems.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2"
+                                                                                  style="font-size: 11pt"><i><b>Available
+        sensors</b></i></font><b> </b><font size="2" style="font-size: 11pt"><i><span
+            style="font-weight: normal">-</span></i></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">Each
+hardware sensor provides a “high” (1) or “low” (0) output.
+The input interface sub-system</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">sets
+the value of the corresponding global integer variable to the
+respective value. The decision/control logic sub-system will read
+this integer to take the right decision. It is assumed that this
+integer is available for C programming. The i/p i/f sub-system keeps
+monitoring the sensor</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">hardware
+outputs and takes action (changes value of the integer variable) as
+soon as the sensor</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">output
+state changes.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">1.
+DOS – driver on seat. This sensor indicates whether a driver is
+present. This sensor provides</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">logical
+“high” (1) as output when a person is sitting on the driver’s
+seat and “low” (0) if he is not on the seat.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">2.
+DSBF – driver seat belt fastened. This sensor indicates whether the
+driver seat belt is</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">fastened
+or not. The sensor hardware provides “high” when driver’s seat
+belt is fastened,</span></font> “<font size="2" style="font-size: 11pt"><span style="font-weight: normal">low”
+otherwise. The corresponding integer variable that reflects the
+physical states inside</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">the
+computer and programming world is “driver_seat_belt_fastened”.
+The i/p i/f sub-system</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">sets
+this integer to 1 when DSBF output is high and to 0 when DSBF is low,
+and the</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">decision/control
+sub-system code reads/uses it.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">3.
+ER – engine running. This sensor indicates whether engine is
+running or not. It provides</span></font> “<font size="2" style="font-size: 11pt"><span style="font-weight: normal">true”
+when engine is running, false otherwise. The corresponding integer
+variable to read</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">and
+use is “engine_running”.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">4.
+DC- doors closed. Indicates whether all doors are closed or not. The
+corresponding integer is</span></font> “<font size="2" style="font-size: 11pt"><span style="font-weight: normal">doors_closed”.</span></font></font></font>
+</p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">5.
+KIC – key in car. Indicates that the keys are still inside the key
+hole, the corresponding</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">integer
+variable is “key_in_car”.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">6.
+DLC – door lock lever. This indicates whether the door lock lever
+is closed or not. To close</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">the
+electronic door locks the driver has to close this door lock lever.
+When the car’s computer</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">finds
+that door lock lever is closed it checks all other variables to
+assess</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">the
+situation and</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">finally
+decides whether to activate the electronic door locks to lock the
+doors or not. For</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">example
+if the car keys are still inside but the driver is not on seat (has
+gone out of car) then</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">the
+doors should never be locked even though the driver has closed the
+door lock lever.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm; font-weight: normal">
+    <font face="Verdana, sans-serif"><font size="2" style="font-size: 11pt">7.
+        BP – brake pedal. This indicates that the brake pedal is pressed by
+        the driver.</font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">8.
+CM – car moving. This sensor indicates the car is moving and
+atleast one of its wheels is</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">turning.
+The corresponding integer variable “car_moving” has value 1 when
+the car is</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">moving,
+and has value 0 if the car is not moving.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><b><font size="2"
+                                                                                     style="font-size: 11pt"><i>Available
+        actuators</i></font> <font size="2" style="font-size: 11pt"><i>-</i></font></b></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">1.
+BELL - A beeper/chime that sounds/plays to alert the driver of any
+abnormal/hazardous</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">situation.
+A global integer variable named “bell” is provided in the</span></font>
+        <font size="2" style="font-size: 11pt"><span style="font-weight: normal">computer,
+if your code that implements the decision/control sub-system sets
+this variable to</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">1,
+then the output interface sub-system will read this value and turn
+the on the voltage on the</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">electrical
+wire that feeds the beeper/chime. As a result the beeper/chime will
+start beeping.</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">The
+beeper will stop when the decision/control subsystem code sets the
+value of “bell” to 0,</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">because
+then the o/p i/f will turn down the electrical voltage feeding the
+beeper hence it will</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">stop.
+The o/p i/f keeps on monitoring the integer variable and takes action
+(change the</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">voltage)
+when the integer changes its value.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">2.
+DLA – door lock actuator. This actuator locks the doors. A
+corresponding global integer</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">variable
+named “door_lock” is provided in the computer, if you set this
+integer to 1 all the</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">doors
+are locked, it unlocks all doors when you set the value of
+“door_lock” to 0.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">3.
+BA – brake actuator. This actuator will actually activate the disk
+brakes in each of the four</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">wheels
+if the global integer variable “brake” is set to 1. The brake
+will be released when this</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">variable
+is set to 0 by the code that implements the decision/control logic
+sub-system.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2"
+                                                                                  style="font-size: 11pt"><i><b>Requirements</b></i></font>
+        <font size="2" style="font-size: 11pt"><i><span style="font-weight: normal">-</span></i></font></font></font>
+</p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">1.
+The BELL should chime/sound when the driver starts the engine without
+fastening his</span></font> <font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">seatbelt.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm; font-weight: normal">
+    <font face="Verdana, sans-serif"><font size="2" style="font-size: 11pt">2.
+        The BELL should sound when the driver starts the car without closing
+        all the doors.</font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm; font-weight: normal">
+    <font face="Verdana, sans-serif"><font size="2" style="font-size: 11pt">3.
+        The BELL should be off as soon as the conditions change to normal.</font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">4.
+The doors should not lock when the driver has got out of the car but
+the keys are still inside</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">the
+engine, even though the driver has closed the door lock lever. Note:
+If the driver is on the</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">seat
+and requests the doors to be locked, the doors must lock.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">5.
+The brake should be engaged when the driver presses the brake pedal.
+Brakes should</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">disengage
+when the brake pedal is released. The brake should engage only when
+the car is</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">moving,
+when the car is stationary the brake should not unnecessarily engage
+to reduce</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">mechanical
+wear and tear of the brake’s hydraulic system.</span></font></font></font></p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><b><font size="2"
+                                                                                     style="font-size: 11pt"><i>Activities
+        to do</i></font> <font size="2" style="font-size: 11pt"><i>- </i></font></b></font></font>
+</p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">a)
+For each requirement, separately provide the Boolean expressions that
+you decided to</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">use.</span></font></font></font>
+</p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">b)
+Create a single combined truth table with all the available sensor
+inputs and actuator</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">outputs
+for all the five requirements together. Some of the truth table
+entries will be</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">don’t-care
+states (represented by an X) instead of true or false. For this
+sub-problem</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">assume
+that these five requirements together constitute a complete system. </span></font></font></font>
+</p>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm">
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">c)
+Write a C program using the </span></font><font size="2" style="font-size: 11pt"><b>Boolean
+        logic concepts and tools learnt in class</b></font><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">
+to</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">materialize
+</span></font><font size="2" style="font-size: 11pt"><b>these five
+        requirements</b></font><font size="2" style="font-size: 11pt"><span style="font-weight: normal">.
+Use if-then-else structure to do this. Submit the C</span></font>
+        <font size="2" style="font-size: 11pt"><span style="font-weight: normal">code
+and your executable. A basic code framework (file name</span></font>
+        “<font size="2" style="font-size: 11pt"><span style="font-weight: normal">lab</span></font><font size="2"
+                                                                                                         style="font-size: 11pt"><span
+                lang="en-US"><span style="font-weight: normal">5</span></span></font><font size="2"
+                                                                                           style="font-size: 11pt"><span
+                style="font-weight: normal">.c”)
+for a general control system has been provided. This is</span></font>
+        <font size="2" style="font-size: 11pt"><span style="font-weight: normal">available
+in the lab files that you downloaded. Use this code to learn how to
+develop</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">C
+program for a real-life control system.</span></font></font></font></p>
+<h2 class="western"><font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt">4
+    Handin</font></font></h2>
+<p align="left" class="western" style="margin-top: 0.42cm; margin-bottom: 0.11cm"><a name="OLE_LINK2"></a><a
+        name="OLE_LINK1"></a>
+    <font face="Verdana, sans-serif"><font size="3" style="font-size: 12pt"><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">Submit
+your version of lab</span></font><font size="2" style="font-size: 11pt"><span lang="en-US"><span
+            style="font-weight: normal">5</span></span></font><font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">.c
+with the code that you wrote, along with</span></font> <font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">sample
+input and output. For those who choose to use file I/O instead of
+console - you should copy the</span></font> <font size="2" style="font-size: 11pt"><span style="font-weight: normal">input
+and output traces for submission.</span></font> <font size="2" style="font-size: 11pt"><span
+            style="font-weight: normal">Results,
+Snapshots and Codes are inserted into Lab Report. You can hand in
+before the deadline.</span></font></font></font></p>
+</body>
+</html>
